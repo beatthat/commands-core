@@ -1,0 +1,31 @@
+{
+  "name": "unity-commands-core",
+  "version": "0.0.1",
+  "description": "Commands have an Execute method that may contain arbitrarily complex behaviour. Commands are generally wired to execute in response to a Notification (see beatthat/unity-notifications)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatthat/unity-commands-core.git"
+  },
+  "files": [
+    "index.js",
+    "scripts",
+    "src"
+  ],
+  "author": "larrykirschner@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beatthat/unity-commands-core/issues"
+  },
+  "homepage": "https://github.com/beatthat/unity-commands-core",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "install:test": "rm -f *.tgz && yarn cache clean && npm pack && cd test && npm run clean && yarn install"
+  },
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "mkdirp": "^0.5.1",
+    "unity-services": "github:beatthat/unity-services#^0.0.2",
+    "unity-notifications": "github:beatthat/unity-notifications#^0.0.6"
+  }
+}
