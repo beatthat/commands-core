@@ -1,6 +1,6 @@
 {
   "name": "unity-commands-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Commands have an Execute method that may contain arbitrarily complex behaviour. Commands are generally wired to execute in response to a Notification (see beatthat/unity-notifications)",
   "main": "index.js",
   "repository": {
@@ -25,7 +25,7 @@
   "dependencies": {
     "ncp": "^2.0.0",
     "mkdirp": "^0.5.1",
-    "unity-services": "beatthat/unity-services#^0.0.2",
+    "unity-services": "beatthat/unity-services#^0.0.3",
     "unity-notifications": "beatthat/unity-notifications#^0.0.8"
   }
 }
