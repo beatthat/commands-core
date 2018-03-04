@@ -1,42 +1,22 @@
-# TEMPLATE
+Commands have an Execute method that may contain arbitrarily complex behaviour. Commands are generally wired to execute in response to a Notification (see beatthat/notifications)
 
-...
+#USAGE
 
-## Usage
+TODO: explain how to register commands using attributes (in Services setup)
 
-See the tests in the `Editor/` folder for each class for usage examples.
+```c#
+[RegisterCommand]
+public class LoadTopicCmd : NotificationCommandBase<string>
+{
+    /// this Command base class executes when a particular notification-type is sent
+	public override string notificationType
+    {
+        get { return TopicNotifications.LOAD_REQUESTED; }
+    }
 
-## Install
-
-From your unity project folder:
-
-    npm init
-    npm install TEMPLATE --save
-    echo Assets/packages >> .gitignore
-    echo Assets/packages.meta >> .gitignore
-
-The package and all its dependencies will be installed in
-your Assets/packages folder.
-
-## Development
-
-Setup and run tests:
-
-    npm install
-    npm install ..
-    cd test
-    npm install
-    gulp
-
-Remember that changes made to the test folder are not saved to the package
-unless they are copied back into the source folder.
-
-To reinstall the files from the src folder, run `npm install ..` again.
-
-### Tests
-
-All tests are wrapped in `#if ...` blocks to prevent test spam.
-
-You can enable tests in: Player settings > Other Settings > Scripting Define Symbols
-
-The test key for this package is: TEMPLATE_TESTS
+	public override void Execute (string id)
+	{
+        // maybe load this topic async then send notifications
+    }
+}
+```
