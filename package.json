@@ -1,7 +1,7 @@
 {
   "name": "commands-core",
   "scope": "beatthat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Commands have an Execute method that may contain arbitrarily complex behaviour. Commands are generally wired to execute in response to a Notification (see beatthat/notifications)",
   "main": "index.js",
   "repository": {
