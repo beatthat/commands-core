@@ -1,6 +1,6 @@
 {
   "name": "commands-core",
-  "scope": "ape",
+  "scope": "beatthat",
   "version": "1.0.0",
   "description": "Commands have an Execute method that may contain arbitrarily complex behaviour. Commands are generally wired to execute in response to a Notification (see beatthat/notifications)",
   "main": "index.js",
@@ -11,7 +11,9 @@
   "files": [
     "index.js",
     "scripts",
-    "src"
+    "src",
+    "Runtime",
+    "Samples"
   ],
   "author": "larrykirschner@gmail.com",
   "license": "MIT",
