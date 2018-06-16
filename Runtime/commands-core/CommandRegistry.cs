@@ -1,7 +1,10 @@
 
-namespace BeatThat.App
+using BeatThat.Bindings;
+using BeatThat.Notifications;
+
+namespace BeatThat.Commands
 {
-	public delegate Command<Notification> CommandFactory();
+    public delegate Command<Notification> CommandFactory();
 
 	public interface CommandRegistry 
 	{
@@ -16,3 +19,4 @@ namespace BeatThat.App
 
 	}
 }
+

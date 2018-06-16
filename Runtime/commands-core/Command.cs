@@ -1,8 +1,6 @@
-
-
-namespace BeatThat.App
+namespace BeatThat.Commands
 {
-	public interface Command : Command<object> {}
+    public interface Command : Command<object> {}
 
 	/// <summary>
 	/// A <c>Command</c> encapsulates a single executable behaviour
@@ -12,3 +10,4 @@ namespace BeatThat.App
 		void Execute(ArgType n);
 	}
 }
+

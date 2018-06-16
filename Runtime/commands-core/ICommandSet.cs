@@ -1,8 +1,8 @@
-using UnityEngine;
+using BeatThat.Notifications;
 
-namespace BeatThat.App
+namespace BeatThat.Commands
 {
-	public interface ICommandSet 
+    public interface ICommandSet 
 	{
 
 		/// <summary>
@@ -30,3 +30,4 @@ namespace BeatThat.App
 		T AddCommand<T>(bool disableAutoRegistration = false) where T : Command<Notification>, RegistersCommand;
 	}
 }
+
